@@ -1,7 +1,9 @@
 //Test Specifications written in Jasmine, to run in Karma
-
-describe('Current Time', function() {
-  it('should return the current time', function() {
-    //Test content will go here.
+//
+describe('stillKickn', function() {
+  it('should return congrats when the user age is greater than or equal to the approximate expected life expectancy in the US', function() {
+    let maxEarthAge = 79;
+    let earthAge = new EarthAge(81)
+    expect(".output")toBeEqualTo.("Congrats!");
   });
 });
