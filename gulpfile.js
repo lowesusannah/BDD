@@ -82,7 +82,7 @@ gulp.task('bowerCSS', function() {
 gulp.task('bower', ['bowerJS', 'bowerCSS']);
 
 gulp.task('serve', function() {
-  browserSync.init({
+  browserSync.init ({
     server: {
       baseDir: "./",
       index: "index.html"
@@ -92,10 +92,10 @@ gulp.task('serve', function() {
   gulp.watch(['bower.json'], ['bowerBuild']);
 });
 
-gulp.task('jsBuild', ['jsBrowserify', 'jshint'], function() {
-  browserSync.reload();
-});
-
-gulp.task('bowerBuild', ['bower'], function(){
-  browserSync.reload();
-})
+// gulp.task('jsBuild', ['jsBrowserify', 'jshint'], function() {
+//   browserSync.reload();
+// });
+//
+// gulp.task('bowerBuild', ['bower'], function(){
+//   browserSync.reload();
+// })

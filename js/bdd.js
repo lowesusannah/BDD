@@ -1,16 +1,16 @@
 function GalacticAge(ageInput) {
 	this.earthAge = ageInput;
 
-function StillKickn(ageInput) {
-  this.earthAge = ageInput;
+let Old() {
+  this.earthAge = earthAge;
 }
 
-StillKickn.prototype.earthAge = function() {
+earthAge.prototype.Old = function() {
   let maxEarthAge = 79;
-  if (this.earthAge >= maxEarthAge) {
-  	return true;
+  if (earthAge >= maxEarthAge) {
+  	return "true";
   } else {
-    return false;
+    return "false";
   }
 };
 
@@ -25,4 +25,5 @@ StillKickn.prototype.earthAge = function() {
 // 		output.push('You made it! Now we can test how long you would make it on another planet');
 // 	}
 }
-exports.galacticAgeModule = galacticAge;
+exports.galacticAgeModule = GalacticAge;
+exports.old = Old;

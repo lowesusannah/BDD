@@ -1,5 +1,5 @@
 
-var Calculator = require('./../js/bdd.js').galacticAgeModule;    //new in Node, after running node tasks, this will end up in the tmp/allConcat.js file
+var GalacticAge = require('./../js/bdd.js').galacticAgeModule;    //new in Node, after running node tasks, this will end up in the tmp/allConcat.js file
 
 $(document).ready(function() {
 	$("#current-time").append(moment());
