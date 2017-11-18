@@ -18,6 +18,7 @@ var lib = require('bower-files')({
   }
 });
 var browserSync = require('browser-sync').create();
+var babelify = require('babelify');
 
 
 gulp.task('concatInterface', function() {
@@ -90,6 +91,16 @@ gulp.task('serve', function() {
   });
   gulp.watch(['js/*.js'], ['jsBuild']);
   gulp.watch(['bower.json'], ['bowerBuild']);
+});
+
+gulp.task('jsBrowserify', ['concatInterface'], function() {
+  return broserify({entries: ['./tmp/allCOncat.js']})
+    .transform(bablify.configure({
+      presets: ["es2015"]
+    }))
+    .bundle()
+    .pipe(source('app.js'))
+    .pipe(gulp.dest('./build/js'))
 });
 
 // gulp.task('jsBuild', ['jsBrowserify', 'jshint'], function() {

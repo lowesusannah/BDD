@@ -1,4 +1,7 @@
-var GalacticAge = require('./../js/bdd.js').galacticAgeModule;//
+// var GalacticAge = require('./../js/bdd.js').galacticAgeModule;//
+import {GalacticAge} from './../js/bdd.js'; 
+
+
 
 describe('Old', function() {
   let maxEarthAge = 79;

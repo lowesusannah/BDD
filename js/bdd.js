@@ -1,7 +1,7 @@
 function GalacticAge(ageInput) {
 	this.earthAge = ageInput;
 
-let Old() {
+function Old() {
   this.earthAge = earthAge;
 }
 
